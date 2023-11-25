@@ -4,6 +4,7 @@ import AboutIcon from "./LiIcon";
 
 const Details = ({ type, time, place, info }) => {
   const ref = useRef(null);
+  const infoPoints = info.split('\n').filter(line => line.trim() !== '');
   return (
     <li
       ref={ref}
@@ -16,10 +17,14 @@ const Details = ({ type, time, place, info }) => {
         transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
-        <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
+        <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm ml-4">
           {time} | {place}
         </span>
-        <p className="font-medium w-full md:text-sm">{info}</p>
+        <ul className="list-disc list-inside space-y-2 ml-4">
+          {infoPoints.map((point, index) => (
+            <li key={index} className="text-base font-medium">{point}</li>
+          ))}
+        </ul>
       </motion.div>
     </li>
   );
@@ -44,25 +49,13 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Bachelor of Science in Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            type="Bachelor of Science in Mathematics and Minor in Computer Science"
+            time="AU 2021- AU 2023"
+            place="The Ohio State University"
+            info="Relevant courses: Relational Databases, Probability for Data Analytics, Algorithms, Mathematical Statistics, Linear Algebra,
+            Differential Equations, Data Structures, Software Development and Design, Computer Architecture, Digital Logic"
           />
 
-          <Details
-            type="Master of Computer Science"
-            time="2020-2022"
-            place="Stanford University"
-            info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding."
-          />
-
-          <Details
-            type="Online Coursework"
-            time="2016-2020"
-            place="Coursera and edX"
-            info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering."
-          />
         </ul>
       </div>
     </div>

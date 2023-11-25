@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
-  DribbbleIcon,
+  //DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
-  PinterestIcon,
+  //PinterestIcon,
   SunIcon,
-  TwitterIcon,
+  //TwitterIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
@@ -46,7 +46,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       {title}
       <span
         className={`
-              inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+              inline-block h-[1px]  bg-dark absolute left-0 -bottom -0.5 
               group-hover:w-full transition-[width] ease duration-300 dark:bg-light
               ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
               `}
@@ -90,15 +90,17 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center lg:hidden"
       >
       <nav className="flex items-center justify-center">
-        <CustomLink className="mr-4" href="/" title="Home" />
-        <CustomLink className="mx-4" href="/about" title="About" />
-        <CustomLink className="mx-4" href="/projects" title="Projects" />
-        <CustomLink className="ml-4" href="/articles" title="Articles" />
+        <CustomLink className="mr-8" href="/" title="Home" />
+        <CustomLink className="mx-8" href="/about" title="About" />
+        <CustomLink className="mx-8" target="_blank" href="/public/documents/YiyaoZhang.pdf" title="Resume" />
+        <CustomLink className="mx-8" href="/projects" title="Projects" />
+        <CustomLink className="mx-8" href="/articles" title="Blogs" />
       </nav>
       <nav
         className="flex items-center justify-center flex-wrap lg:mt-2
       "
       >
+        {/* 
         <motion.a
           target={"_blank"}
           className="w-6 mr-3"
@@ -109,26 +111,28 @@ const Navbar = () => {
         >
           <TwitterIcon />
         </motion.a>
+        */}
         <motion.a
           target={"_blank"}
-          className="w-6 mx-3"
-          href="#"
+          className="w-7 mr-4"
+          href="https://github.com/yiyaozzz"
           whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ scale: 2 }}
           aria-label="Checkout my github profile"
         >
           <GithubIcon />
         </motion.a>
         <motion.a
           target={"_blank"}
-          className="w-6 mx-3"
-          href="#"
+          className="w-7 mx-4"
+          href="https://www.linkedin.com/in/yiyao-zhang2023/"
           whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ scale: 2 }}
           aria-label="Checkout my linkedin profile"
         >
           <LinkedInIcon />
         </motion.a>
+        {/*
         <motion.a
           target={"_blank"}
           className="w-6 mx-3 bg-light rounded-full"
@@ -149,10 +153,10 @@ const Navbar = () => {
         >
           <DribbbleIcon />
         </motion.a>
-
+          */}
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`w-6 h-6 ease ml-3 flex items-center justify-center rounded-full p-1  
+          className={`w-7 h-7 ease ml-4 flex items-center justify-center rounded-full p-1  
             ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
             `}
           aria-label="theme-switcher"
@@ -178,13 +182,15 @@ const Navbar = () => {
       <nav className="flex items-center justify-center flex-col">
         <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Home" />
         <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="About" />
+        <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" target="_blank" href="/public/documents/YiyaoZhang.pdf" title="Resume" />
         <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Projects" />
-        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Articles" />
+        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/blogs" title="Blogs" />
       </nav>
       <nav
         className="flex items-center justify-center  mt-2
       "
       >
+        {/* 
         <motion.a
           target={"_blank"}
           className="w-6 m-1 mr-3 sm:mx-1"
@@ -194,26 +200,7 @@ const Navbar = () => {
           aria-label="Checkout my twitter profile"
         >
           <TwitterIcon />
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my github profile"
-        >
-          <GithubIcon />
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my linkedin profile"
-        >
-          <LinkedInIcon />
+          
         </motion.a>
         <motion.a
           target={"_blank"}
@@ -235,6 +222,28 @@ const Navbar = () => {
         >
           <DribbbleIcon />
         </motion.a>
+        */}
+        <motion.a
+          target={"_blank"}
+          className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
+          href="#"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label="Checkout my github profile"
+        >
+          <GithubIcon />
+        </motion.a>
+        <motion.a
+          target={"_blank"}
+          className="w-6 m-1 mx-3 sm:mx-1"
+          href="#"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label="Checkout my linkedin profile"
+        >
+          <LinkedInIcon />
+        </motion.a>
+
 
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -254,7 +263,6 @@ const Navbar = () => {
 
       : null
     }
-
       <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
         <Logo />
       </div>

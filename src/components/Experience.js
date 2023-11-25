@@ -6,8 +6,9 @@ import {
 import LiIcon from "./LiIcon";
 
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company, location, companyLink, time, work }) => {
   const ref = useRef(null);
+  const workPoints = work.split('\n').filter(line => line.trim() !== '');
   return (
     <li
       ref={ref}
@@ -23,16 +24,22 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           {position}{" "}
           <a
             className="capitalize text-primary dark:text-primaryDark"
-            href={companyLink}
+            href={companyLink} 
             target={"_blank"}
           >
-            @{company}
+            @{company} 
           </a>
         </h3>
-        <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
-          {time} | {address}
+        <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm ml-4">
+          {time} | {location}
         </span>
-        <p className="font-medium w-full md:text-sm"> {work}</p>
+        {/*}<p className="font-medium w-full md:text-sm"> {work}</p>
+        {*/}
+        <ul className="list-disc list-inside space-y-2 ml-4">
+          {workPoints.map((point, index) => (
+            <li key={index} className="text-base font-medium">{point}</li>
+          ))}
+        </ul>
       </motion.div>
     </li>
   );
@@ -41,6 +48,19 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 const Experience = () => {
 
   const ref = useRef(null);
+
+  const oracleWorkProp = `Developed data-driven dashboard by integrating multiple data sources and applying mathematical model for analysis
+Designed and implemented a system automation tool to process complex datasets from extensive spreadsheets
+Conducted data analytics using SQL, identifying key trends and extracting insights from vast datasets
+Led data consolidation efforts, ensuring data consistency and integrity across various team repositories
+Collaborated closely with cross-functional teams to enhance data sharing and communication for efficient workflows`;
+
+  const aliWorkProp = `Developed a project management web platform and operational activity web interface using JavaScript
+Leveraged SQL to manage and analyze large sets of fault data, ensuring data integrity and optimized retrieval
+Conducted data-driven analysis on fault data which optimized emergency processes for Alibaba Cloud
+Collaborated cross-functionally with clients and technical teams for project alignment and led retrospective
+Created data visualizations and e-posters for data reports and operational activities using Python and Adobe Suite`;
+
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -54,7 +74,7 @@ const Experience = () => {
           Experience
         </h2>
 
-        <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
+        <div ref={ref}  className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
           <motion.div
             className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
             origin-top  dark:bg-primaryDark dark:shadow-3xl"
@@ -62,57 +82,23 @@ const Experience = () => {
           />
           <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
             <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="https://google.com"
-              time="2022-Present"
-              address="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+              position="Configuration Analyst Intern"
+              company="Oracle Corporation"
+              location="United States"
+              companyLink="https://www.oracle.com/"
+              time="May 2023 - September 2023"
+              work= {oracleWorkProp}
             />
 
             <Details
-              position="Intern"
-              company="Facebook"
-              companyLink="https://facebook.com"
-              time="Summer 2021"
-              address="Menlo Park, CA."
-              work="Worked on a team responsible for developing a new mobile app
-              feature that allowed users to create and share short-form video
-              content, including designing and implementing a new user interface
-              and developing the backend infrastructure to support the feature."
+              position="Operation and Maintenance Assistant Engineering"
+              company="Alibaba Cloud"
+              location="China"
+              companyLink="https://us.alibabacloud.com/"
+              time="January 2021 - July 2021"
+              work={aliWorkProp}
             />
 
-            <Details
-              position="Software Developer"
-              company="Amazon"
-              companyLink="https://amazon.com"
-              time="2020-2021"
-              address="Seattle, WA."
-              work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such as product recommendations and user reviews, and optimizing the app's performance and reliability."
-            />
-
-            <Details
-              position="Software Developer Intern"
-              company="Microsoft"
-              companyLink="https://microsoft.com"
-              time="Summer 2019"
-              address="Redmond, WA."
-              work="Worked on a team responsible for developing new features for
-              Microsoft's Windows operating system, including implementing a new
-              user interface for a system settings panel and optimizing the
-              performance of a core system component."
-            />
-
-            <Details
-              position="Teaching Assistant"
-              company="MIT"
-              companyLink="https://mit.edu"
-              time="Fall 2018"
-              address="Massachusetts Ave, Cambridge, MA."
-              work="Assisted in teaching a course on computer programming, held office
-              hours to help students with assignments, and graded exams and
-              assignments."
-            />
           </ul>
         </div>
         </div>

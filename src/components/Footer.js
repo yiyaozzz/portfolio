@@ -10,19 +10,26 @@ const Footer = () => {
     "
     >
       <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
-        <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
-
-        <div className="flex items-center lg:py-2">
-          Built with <span className="text-primary text-2xl px-1 dark:text-primaryDark">&#9825;	</span> by&nbsp;
-          <Link
-            href="https://devdreaming.com"
+        <span>Last Updated: 
+        <Link
+            href="https://www.onthisday.com/day/november/11"
             target="_blank"
             className="underline underline-offset-2"
           >
-            CodeBucks
+             Nov 11, {new Date().getFullYear()}
+          </Link>
+          </span>
+        <div className="flex items-center lg:py-2">
+          <span className="text-primary text-2xl px-1 dark:text-primaryDark">&#9825;	</span>
+          <Link
+            href="https://www.linkedin.com/in/yiyao-zhang2023/"
+            target="_blank"
+            className="underline underline-offset-2"
+          >
+            Let's Connect!
           </Link>
         </div>
-
+        {/* 
         <Link
           href="https://devdreaming.com/about"
           target="_blank"
@@ -30,6 +37,7 @@ const Footer = () => {
         >
           Say Hello
         </Link>
+        */}
       </Layout>
     </footer>
   );
