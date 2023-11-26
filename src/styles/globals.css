@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-capitalize {
+    text-transform: none !important;
+  }
+  

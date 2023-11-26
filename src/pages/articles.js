@@ -2,13 +2,13 @@ import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import blog1 from "../../public/images/articles/pagination component in reactjs.jpg";
+import blog1 from "../../public/images/articles/vectorDatabases.png";
 import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
-import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import blog5 from "../../public/images/articles/create modal component in react using react portals.png";
-import blog6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
-import blog7 from "../../public/images/articles/What is Redux with easy explanation.png";
+import blog3 from "../../public/images/articles/AIFundemental.webp";
+import blog4 from "../../public/images/articles/RSStoHTML.jpg";
+import blog5 from "../../public/images/articles/mathProof.png";
+import blog6 from "../../public/images/articles/abnormalPsy.png";
+import blog7 from "../../public/images/articles/quantumMechanics.jpeg";
 import blog8 from "../../public/images/articles/What is higher order component in React.jpg";
 
 import Layout from "@/components/Layout";
@@ -127,10 +127,8 @@ export default function Articles() {
   return (
     <>
       <Head>
-        <title>Simple Portfolio Built with Nextjs | Articles Page</title>
-        <meta name="description" content="Browse through CodeBucks's collection of software engineering articles and 
-        tutorials on Next.js, React.js, web development, and more. 
-        Gain valuable insights and stay up-to-date with SEO tips for building a developer portfolio." />
+        <title>Yiyao Zhang | Articles</title>
+        <meta name="description" content="Yiyao Zhang's portfolio." />
       </Head>
       <TransitionEffect />
       <main
@@ -138,27 +136,25 @@ export default function Articles() {
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="Words Can Change the World!"
-            className="!text-8xl !leading-tight mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+            text="Welcom!😄 This blog was born from dual motivations: 1) to articulate and solidify my learning journey through writing, 2) to chronicle and share my thoughts and insights, both for personal reflection and for others' benefit. Writing about my learnings acts as a powerful reinforcement tool – after all, true understanding comes from the ability to explain to others. The blog also serves as a personal time capsule, capturing the evolution of my ideas over time. The posts here are dynamic, constantly evolving with added insights, updated information, and refreshed visuals, and are more akin to spontaneous thoughts than polished prose. At its core, this platform is less a conventional blog and more a publicly shared journal, open for anyone who might find value in it or wish to engage in constructive debate. I deeply value open, candid discussions and critiques of ideas, as they are instrumental in intellectual growth. "
+            className="no-capitalize !text-base !font-normal !text-left !leading-tight mb-16 lg:!text-lg sm:!text-md xs:!text-sm sm:mb-8"
           />
+          
 
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               img={blog1}
-              title="build a custom pagination component in reactjs from scratch"
-              time="9 min read"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this 
-              step-by-step guide to integrate Pagination component in your ReactJS project."
-              link="https://devdreaming.com/blogs/create-pagination-component-reactjs"
+              title="Vector Databases: A Guide to Embeddings and Searches"
+              time="10 min read"
+              summary="Comprehensive overview of vector databases, detailing the processes for creating and searching vector representations of data, and their applications in various AI-driven industries."
+              link="https://yiyaozhang.notion.site/Vector-Databases-A-Guide-to-Embeddings-and-Searches-61c7db854cf04869b49b6adeb9458eb1?pvs=4"
             />
 
             <FeaturedArticle
-              img={blog2}
-              title="creating stunning loading screens in react: Build 3 types of loading screens"
-              time="10 min read"
-              summary="Learn how to create stunning loading screens in React with 3 different methods. 
-              Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the 
-              user experience."
+              img={blog6}
+              title="Exploring Abnormal Psychology From Diagnosis to Research Methods"
+              time="20 min read"
+              summary="Comprehensive exploration of abnormal psychology, examining the criteria for diagnosing mental disorders, the societal and cultural contexts that shape these definitions, and the research methods used to understand and treat them."
               link="https://devdreaming.com/blogs/create-3-different-types-of-loading-screens-in-react"
             />
           </ul>
@@ -169,40 +165,40 @@ export default function Articles() {
 
           <ul className="flex flex-col items-center relative">
             <Article
-              title="form validation in reactjs: build a reusable custom hook for inputs and error handling"
+              title="Vector Databases: A Guide to Embeddings and Searches"
+              img={blog1}
+              date="October 27, 2023"
+              link="https://yiyaozhang.notion.site/Vector-Databases-A-Guide-to-Embeddings-and-Searches-61c7db854cf04869b49b6adeb9458eb1?pvs=4"
+            />
+            <Article
+              title="Glossary of Fundamental Concepts in AI"
               img={blog3}
-              date="January 27, 2023"
-              link="https://devdreaming.com/blogs/react-form-validation-custom-hook"
+              date="April 12, 2022"
+              link="https://yiyaozhang.notion.site/Glossary-of-Fundamental-Concepts-in-AI-9065d83277724be39642df6dd81194b6?pvs=4"
             />
             <Article
-              title="silky smooth scrolling in reactjs: a step-by-step guide for react developers"
+              title="Convert XML RSS to HTML File Using Java"
               img={blog4}
-              date="January 30, 2023"
-              link="https://devdreaming.com/blogs/smooth-scrolling-in-react-js"
+              date="March 20, 2022"
+              link="https://yiyaozhang.notion.site/Convert-XML-RSS-to-HTML-File-Using-Java-9efa5e29bd65492d881014fd43594c2a?pvs=4"
             />
             <Article
-              title="creating an efficient modal component in react using hooks and portals"
+              title="Foundations of Mathematical Proof: Defining Numbers and Sets"
               img={blog5}
-              date="January 29, 2023"
-              link="https://devdreaming.com/blogs/create-efficient-modal-react-portals"
+              date="Feburary 28, 2022"
+              link="https://yiyaozhang.notion.site/Foundations-of-Mathematical-Proof-Defining-Numbers-and-Sets-430afcc39c7145c38746ea167f8d9379"
             />
             <Article
-              title="build a fabulous todo list app with react, redux and framer-motion"
+              title="Exploring Abnormal Psychology From Diagnosis to Research Methods"
               img={blog6}
-              date="January 28, 2023"
-              link="https://devdreaming.com/blogs/build-react-redux-framer-motion-todo-app"
+              date="January 25, 2022"
+              link="https://yiyaozhang.notion.site/Exploring-Abnormal-Psychology-From-Diagnosis-to-Research-Methods-c137255271824804a75ee7d3879ec034?pvs=4"
             />
             <Article
-              title="redux simplified: a beginner's guide for web developers"
+              title="The Golden Rules of Quantum Mechanics"
+              date="December 25, 2021"
               img={blog7}
-              date="January 31, 2023"
-              link="https://devdreaming.com/blogs/redux-simply-explained"
-            />
-            <Article
-              title="what is higher order component (hoc) in react?"
-              date="January 4, 2023"
-              img={blog8}
-              link="https://devdreaming.com/blogs/higher-order-component-hoc-react"
+              link="https://yiyaozhang.notion.site/Rules-of-Quantum-Mechanics-6ae71d0c73144a31a7cb86905532999e?pvs=4"
             />
           </ul>
         </Layout>

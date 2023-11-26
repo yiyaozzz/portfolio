@@ -6,9 +6,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
+import proj2 from "../../public/images/projects/audioWaveform.jpg";
 import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
+import proj4 from "../../public/images/projects/personalWebProj.png";
 import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
 import proj6 from "../../public/images/projects/devdreaming.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -48,22 +48,16 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
         />
       </Link>
       <div className="flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <span className="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
-          {type}
-        </span>
-        <Link
-          href={link}
-          target={"_blank"}
-          className="underline-offset-2 hover:underline"
-        >
+
+
           <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">
             {title}
           </h2>
-        </Link>
-        <p className=" my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">
+        <p className=" my-4 rounded-md font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
-        <div className="mt-2 flex items-center">
+
+        <div className="mt-5 flex items-center">
           <Link
             href={github}
             target={"_blank"}
@@ -84,6 +78,9 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             Visit Project
           </Link>
         </div>
+        <span className="mt-6 text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
+          {type}
+        </span>
       </div>
     </article>
   );
@@ -163,11 +160,10 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Modern Portfolio Built with Nextjs | Projects Page</title>
+        <title>Yiyao Zhang | Projects</title>
         <meta
           name="description"
-          content="Discover the latest webapp projects created by CodeBucks, a Next.js developer with 
-        expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio."
+          content="Yiyao Zhang's portfolio."
         />
       </Head>
 
@@ -175,29 +171,43 @@ export default function Projects() {
       <main
         className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}
       >
-        <Layout className="pt-16">
+        <Layout className="pt-10">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+            text="Stamps"
+            className="mb-12 !text-6xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                img={proj1}
-                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/codebucks27/CryptoBucks-Final-Code"
+                type="Python"
+                title="EchoGraph: From Soundbite to Sight"
+                summary="Developed a utility to handle audio files and associated subtitles (SRT). Its primary function is to segment the audio according to the SRT cues and generate visual waveform displays for each section, complete with text annotations."
+                img={proj2}
+                link="https://github.com/yiyaozzz/audioWaveformExplorer"
+                github="https://github.com/yiyaozzz/audioWaveformExplorer"
               />
             </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
+                type="JavaScript, TypeScript"
+                title="Personal Website"
+                summary="A bespoke professional portfolio, crafted with Next JS, utilizing the dynamic capabilities of Framer-motion and the styled-components library. It features seamless page transitions, engaging background animations, and a distinctive design, all optimized for a responsive mobile experience."
+                img={proj4}
+                link="https://github.com/yiyaozzz/portfolio"
+                github="https://github.com/yiyaozzz/portfolio"
+              />
+            </div>
+            {/*}
+
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website Template"
-                title="NFT collection Website"
+                type="Python"
+                title="Audio Waveform Process Tool"
                 img={proj2}
                 link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
+                github="https://github.com/yiyaozzz/audioWaveformExplorer"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -209,34 +219,8 @@ export default function Projects() {
                 github="https://github.com/codebucks27/wibe-studio"
               />
             </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                type="Portfolio Website"
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                img={proj4}
-                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
-                github="https://github.com/codebucks27/react-portfolio-final"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                img={proj5}
-                title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Blog Website"
-                img={proj6}
-                title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
-              />
-            </div>
+
+          {*/}
           </div>
         </Layout>
       </main>

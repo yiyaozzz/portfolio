@@ -92,7 +92,6 @@ const Navbar = () => {
       <nav className="flex items-center justify-center">
         <CustomLink className="mr-8" href="/" title="Home" />
         <CustomLink className="mx-8" href="/about" title="About" />
-        <CustomLink className="mx-8" target="_blank" href="/public/documents/YiyaoZhang.pdf" title="Resume" />
         <CustomLink className="mx-8" href="/projects" title="Projects" />
         <CustomLink className="mx-8" href="/articles" title="Blogs" />
       </nav>
@@ -112,6 +111,21 @@ const Navbar = () => {
           <TwitterIcon />
         </motion.a>
         */}
+
+        <motion.a
+                  href="/documents/YiyaoZhang.pdf"
+                  className="mr-80 cursor-pointer w-max origin-center absolute 
+                  font-semibold bg-dark text-light py-1 px-3 rounded-full dark:bg-light dark:text-dark
+                  lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3  xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold
+                  "
+                  target="_blank"
+                  rel = "noopener noreferrer"
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 2 }}
+                >
+                  Resume
+        </motion.a>
+
         <motion.a
           target={"_blank"}
           className="w-7 mr-4"
@@ -132,6 +146,8 @@ const Navbar = () => {
         >
           <LinkedInIcon />
         </motion.a>
+
+
         {/*
         <motion.a
           target={"_blank"}
@@ -182,10 +198,11 @@ const Navbar = () => {
       <nav className="flex items-center justify-center flex-col">
         <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Home" />
         <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="About" />
-        <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" target="_blank" href="/public/documents/YiyaoZhang.pdf" title="Resume" />
         <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Projects" />
-        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/blogs" title="Blogs" />
+        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Blogs" />
+
       </nav>
+      
       <nav
         className="flex items-center justify-center  mt-2
       "
@@ -244,7 +261,6 @@ const Navbar = () => {
           <LinkedInIcon />
         </motion.a>
 
-
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className={`w-6 h-6 ease m-1 ml-3 sm:mx-1 flex items-center justify-center rounded-full p-1  
@@ -261,11 +277,13 @@ const Navbar = () => {
       </nav>
       </motion.div>
 
+
       : null
     }
       <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
         <Logo />
       </div>
+    
     </header>
   );
 };

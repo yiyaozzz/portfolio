@@ -30,7 +30,7 @@ const Details = ({ position, company, location, companyLink, time, work }) => {
             @{company} 
           </a>
         </h3>
-        <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm ml-4">
+        <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm ml-4" href="https://www.osu.edu/" >
           {time} | {location}
         </span>
         {/*}<p className="font-medium w-full md:text-sm"> {work}</p>

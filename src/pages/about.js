@@ -47,7 +47,12 @@ export default function About() {
         className={`flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
-
+        {/*}
+        <AnimatedText
+            text="About Me"
+            className="mb-16 !text-4xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+          />
+        {*/}
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex flex-col w-full max-w-lg md:order-2">
               <h2 className="mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
@@ -59,7 +64,7 @@ export default function About() {
                 studies focus on applied mathematics, data science, and AI technologies.
               </p>
               <p className="my-4 font-medium">
-              I have been fortunate to work at <strong>Oracle Corporation</strong> as a Configuration Analyst Intern and at <strong>Alibaba Clou</strong>d as
+              I have been fortunate to work at <strong>Oracle Corporation</strong> as a Configuration Analyst Intern and at <strong>Alibaba Cloud</strong> as
                an Operation ansd Maintenance Assistant Engineer. Beyond these professional roles, I've actively participated in <strong>interdisciplinary 
                research</strong> at OSU, contributing to the efforts of both the <strong>NeuroTechnology Team</strong> and the <strong>Underwater Robotics Team</strong>. 
                Additionally, Vice Presidency at the <strong>Cantonese Club</strong> has cultivated my leadership skills, enriching my personal and professional development.
