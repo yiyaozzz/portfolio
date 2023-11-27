@@ -155,7 +155,7 @@ export default function Articles() {
               title="Exploring Abnormal Psychology From Diagnosis to Research Methods"
               time="20 min read"
               summary="Comprehensive exploration of abnormal psychology, examining the criteria for diagnosing mental disorders, the societal and cultural contexts that shape these definitions, and the research methods used to understand and treat them."
-              link="https://devdreaming.com/blogs/create-3-different-types-of-loading-screens-in-react"
+              link="https://yiyaozhang.notion.site/Exploring-Abnormal-Psychology-From-Diagnosis-to-Research-Methods-c137255271824804a75ee7d3879ec034?pvs=4"
             />
           </ul>
 

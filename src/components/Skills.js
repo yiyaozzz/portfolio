@@ -37,33 +37,35 @@ const Skills = () => {
       "
     >
    
-        <motion.div whileHover={{scale:1.05}} className="cursor-pointer flex rounded-full font-semibold bg-dark text-light p-8 shadow-dark
+        {/*}<motion.div whileHover={{scale:1.05}} className="cursor-pointer flex rounded-full font-semibold bg-dark text-light p-5 shadow-dark
         dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:text-xs xs:p-2
         ">
-        Web
+        
       </motion.div>
-
-          <Skill name="Python" x="-5vw" y="-10vw" />
+  {*/}
+      💡
+          <Skill name="Python" x="-5vw" y="-2vw" />
           <Skill name="SQL" x="7vw" y="-6vw" />
-          <Skill name="Linux" x="2vw" y="10vw" />
+          <Skill name="Linux" x="2vw" y="9vw" />
+          <Skill name="Java" x="0vw" y="-10vw" />
 
           <Skill name="R" x="-16vw" y="-5vw" />
           <Skill name="Jupyter Lab" x="-16vw" y="5vw" />
-          <Skill name="AWS" x="0vw" y="-20vw" />
-          <Skill name="C" x="16vw" y="-2vw" />
+          <Skill name="AWS" x="0vw" y="-17vw" />
+          <Skill name="C" x="18vw" y="2vw" />
           <Skill name="JavaScript" x="16vw" y="9vw" />
-          <Skill name="MySQL" x="15vw" y="-12vw" />
+          <Skill name="MySQL" x="15vw" y="-10vw" />
           <Skill name="OpenCV" x="-2vw" y="20vw" />
 
-          <Skill name="NextJS" x="-20vw" y="-15vw" />
+          <Skill name="NextJS" x="-16vw" y="-15vw" />
           <Skill name="Huggingface" x="28vw" y="-5vw" />
-          <Skill name="Oracle DB" x="vw" y="-20vw" />
+          <Skill name="Oracle DB" x="10vw" y="-21vw" />
 
-          <Skill name="Git" x="-32vw" y="-11vw" />
+          <Skill name="Git" x="-29vw" y="-11vw" />
           <Skill name="HTML" x="-33vw" y="0vw" />
           <Skill name="Tawilwind CSS" x="-28vw" y="16vw" />
           <Skill name="Hive" x="20vw" y="17vw" />
-          <Skill name="Spark" x="28vw" y="18vw" />
+          <Skill name="Spark" x="28vw" y="21vw" />
     </div></>
   );
 };

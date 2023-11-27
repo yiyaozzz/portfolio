@@ -32,10 +32,14 @@ const Details = ({ type, time, place, info }) => {
 
 const Extracurricular = () => {
   const ref = useRef(null);
+  const bioHackInfoProp = `Led computer vision initiatives for the RoboSub competition using OpenCV and TensorFlow's object detection API
+  Implemented rotation invariant and multi-scale template matching to refine detection accuracy
+  Conducted systematic performance tests, optimizing using advanced algorithms and techniques`;
   const neuroTechInfoProp = 'Processed electroencephalogram (EEG) data using filtering techniques, such as Independent Component Analysis and band-pass filters, using MATLAB and scipy to produce clean datasets'
-    const underWaterInfoProp = `Led computer vision initiatives for the RoboSub competition using OpenCV and TensorFlow's object detection API
+  const underWaterInfoProp = `Led computer vision initiatives for the RoboSub competition using OpenCV and TensorFlow's object detection API
 Implemented rotation invariant and multi-scale template matching to refine detection accuracy
 Conducted systematic performance tests, optimizing using advanced algorithms and techniques`;
+
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -52,6 +56,12 @@ Conducted systematic performance tests, optimizing using advanced algorithms and
           style={{ scaleY: scrollYProgress }}
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <Details
+            type="Bio-Hackthon"
+            time="2023"
+            place="The Ohio State University"
+            info= {bioHackInfoProp}
+          />
           <Details
             type="NeuroTechnology Team"
             time="2023"

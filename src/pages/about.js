@@ -65,7 +65,7 @@ export default function About() {
               </p>
               <p className="my-4 font-medium">
               I have been fortunate to work at <strong>Oracle Corporation</strong> as a Configuration Analyst Intern and at <strong>Alibaba Cloud</strong> as
-               an Operation ansd Maintenance Assistant Engineer. Beyond these professional roles, I've actively participated in <strong>interdisciplinary 
+               an Operation and Maintenance Assistant Engineer. Beyond these professional roles, I've actively participated in <strong>interdisciplinary 
                research</strong> at OSU, contributing to the efforts of both the <strong>NeuroTechnology Team</strong> and the <strong>Underwater Robotics Team</strong>. 
                Additionally, Vice Presidency at the <strong>Cantonese Club</strong> has cultivated my leadership skills, enriching my personal and professional development.
               </p>

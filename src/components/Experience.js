@@ -98,7 +98,16 @@ Created data visualizations and e-posters for data reports and operational activ
               time="January 2021 - July 2021"
               work={aliWorkProp}
             />
-
+            {/*}
+            <Details
+              position="Bio-Hackthon"
+              company="Patient Safety Technology Challenge"
+              location="United States"
+              companyLink="https://www.patientsafetytech.com/"
+              time="2023"
+              work={aliWorkProp}
+            />
+  {*/}
           </ul>
         </div>
         </div>
