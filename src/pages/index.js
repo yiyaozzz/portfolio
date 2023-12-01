@@ -37,16 +37,18 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="mt-5 flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Hello!"
+                text="👋 I'm Yiyao"
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
+              {/*}
               <AnimatedText
-                text="I'm Yiyao Zhang"
+                text=""
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
+  {*/}
+              <p className="mt-7 my-4 text-base font-medium md:text-sm sm:!text-xs">
               Grounded in mathematics and computer science, I leverage my passion for advanced tech to unravel complex problems, creating solutions that positively impact people's lives.
               </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
@@ -57,7 +59,7 @@ export default function Home() {
                   href="/documents/YiyaoZhang.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
+                  className={`mt-5 flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
             md:p-2 md:px-4 md:text-base
@@ -67,8 +69,8 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href="mailto:zhang.11896@osu.edu"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline 
+                  href="mailto:yiyaozyyz@gmail.com"
+                  className="mt-5 ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base"
                   target="_blank"
                   rel = "noopener noreferrer"

@@ -32,13 +32,12 @@ const Details = ({ type, time, place, info }) => {
 
 const Extracurricular = () => {
   const ref = useRef(null);
-  const bioHackInfoProp = `Led computer vision initiatives for the RoboSub competition using OpenCV and TensorFlow's object detection API
-  Implemented rotation invariant and multi-scale template matching to refine detection accuracy
-  Conducted systematic performance tests, optimizing using advanced algorithms and techniques`;
-  const neuroTechInfoProp = 'Processed electroencephalogram (EEG) data using filtering techniques, such as Independent Component Analysis and band-pass filters, using MATLAB and scipy to produce clean datasets'
-  const underWaterInfoProp = `Led computer vision initiatives for the RoboSub competition using OpenCV and TensorFlow's object detection API
-Implemented rotation invariant and multi-scale template matching to refine detection accuracy
-Conducted systematic performance tests, optimizing using advanced algorithms and techniques`;
+  const bioHackInfoProp = `Developed a hardware and software solution for Concussion injury management, enabling clinicians to collect and transmit medical data. This reduced errors in patient handoffs by 60% and streamlined the sharing of SCAT6 evaluations
+  Led software application development that enhanced medical data gathering and transfer efficiency by 90%`;
+  const neuroTechInfoProp = `Developed non-invasive Brain-Computer Interface using Python and Welch's method for signal processing, and used Keras-based convolutional neural network (CNN), which advanced communication method for paralyzed patients 
+  Processed electroencephalogram (EEG) data by applying Independent Component Analysis in MATLAB and refined datasets with band-pass filtering using Python, producing clean datasets essential for reliable BCI phoneme recognition`;
+  const underWaterInfoProp = `Contributed to computer vision for underwater robotics by integrating OpenCV and YOLO for object detection, coupled with ROS2 to streamline system communication and enhance navigational functions
+Enhanced object detection accuracy by 20% by employing rotation-invariant and multi-scale template matching with OpenCV, and systematically improved algorithmic efficiency through performance testing`;
 
 
   const { scrollYProgress } = useScroll({
@@ -59,7 +58,7 @@ Conducted systematic performance tests, optimizing using advanced algorithms and
         <Details
             type="Bio-Hackthon"
             time="2023"
-            place="The Ohio State University"
+            place="AmplifyBio, The Ohio State University"
             info= {bioHackInfoProp}
           />
           <Details

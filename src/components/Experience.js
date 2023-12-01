@@ -49,17 +49,17 @@ const Experience = () => {
 
   const ref = useRef(null);
 
-  const oracleWorkProp = `Developed data-driven dashboard by integrating multiple data sources and applying mathematical model for analysis
-Designed and implemented a system automation tool to process complex datasets from extensive spreadsheets
-Conducted data analytics using SQL, identifying key trends and extracting insights from vast datasets
-Led data consolidation efforts, ensuring data consistency and integrity across various team repositories
-Collaborated closely with cross-functional teams to enhance data sharing and communication for efficient workflows`;
+  const oracleWorkProp = `Developed a SQL-based data integration system by synthesizing information from four distinct systems onto a Jira dashboard, enhancing data interpretability and supporting strategic decision-making 
+Engineered a Python automation tool to process and analyze complex datasets, boosting efficiency by 25% and reducing manual error rate by 60% 
+Contributed to the data integration for the Oracle CPQ database, achieving a 30% improvement in repository consistency and bolstering data integrity across over 10,000 companies
+Collaborated with cross-functional engineering and business teams to optimize data exchange processes, resulting in a 15% increase in workflow efficiency 
+Streamlined data consolidation efforts across multiple repositories via Confluence, resulting in a 40% improvement in data integration and consistency`;
 
-  const aliWorkProp = `Developed a project management web platform and operational activity web interface using JavaScript
-Leveraged SQL to manage and analyze large sets of fault data, ensuring data integrity and optimized retrieval
+  const aliWorkProp = `Developed a JavaScript-based fault management web platform to quickly restore operations during critical cloud service outages, enhancing user stability and boosting service reliability by 30%
+Enhanced SQL-based data management, increasing data retrieval speeds by 20% and upholding cloud service stability to bolster client trust
 Conducted data-driven analysis on fault data which optimized emergency processes for Alibaba Cloud
-Collaborated cross-functionally with clients and technical teams for project alignment and led retrospective
-Created data visualizations and e-posters for data reports and operational activities using Python and Adobe Suite`;
+Analyzed fault data to improve emergency response efficiency by 15% and created a Python-powered visualization dashboard, which was integrated into the data reporting system, enhancing the clarity of operational insights by 25%
+Led cross-functional teams to align projects with business goal, facilitating fault management retrospectives, continuous improvement cycles, and delivering a 10% increase in project satisfaction rates`;
 
 
   const { scrollYProgress } = useScroll({

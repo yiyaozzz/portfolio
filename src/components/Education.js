@@ -52,8 +52,7 @@ const Education = () => {
             type="Bachelor of Science in Mathematics and Minor in Computer Science"
             time="AU 2021- AU 2023"
             place="The Ohio State University"
-            info="Relevant courses: Relational Databases, Probability for Data Analytics, Algorithms, Mathematical Statistics, Linear Algebra,
-            Differential Equations, Data Structures, Software Development and Design, Computer Architecture, Digital Logic"
+            info="Relevant courses: Databases, Probability for Data Analytics, Mathematical Statistics, Data Structures and Algorithms, Linear Algebra, Differential Equations, Software Development and Design, Computer Architecture, Digital Logic"
           />
 
         </ul>
