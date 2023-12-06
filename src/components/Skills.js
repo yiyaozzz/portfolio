@@ -51,21 +51,28 @@ const Skills = () => {
 
           <Skill name="R" x="-16vw" y="-5vw" />
           <Skill name="Jupyter Lab" x="-16vw" y="5vw" />
+          <Skill name="Agile" x="-14vw" y="12vw" />
           <Skill name="AWS" x="0vw" y="-17vw" />
           <Skill name="C" x="18vw" y="2vw" />
-          <Skill name="JavaScript" x="16vw" y="9vw" />
+          <Skill name="JavaScript" x="17vw" y="9vw" />
+          <Skill name="Hadoop" x="9vw" y="16vw" />
           <Skill name="MySQL" x="15vw" y="-10vw" />
           <Skill name="OpenCV" x="-2vw" y="20vw" />
 
           <Skill name="NextJS" x="-16vw" y="-15vw" />
           <Skill name="Huggingface" x="28vw" y="-5vw" />
-          <Skill name="Oracle DB" x="10vw" y="-21vw" />
+          <Skill name="ETL" x="29vw" y="4vw" />
+          <Skill name="MongoDB" x="10vw" y="-21vw" />
+          <Skill name="Tableau" x="-5vw" y="-24vw" />
 
           <Skill name="Git" x="-29vw" y="-11vw" />
           <Skill name="HTML" x="-33vw" y="0vw" />
           <Skill name="Tawilwind CSS" x="-28vw" y="16vw" />
+          <Skill name="Machine Learning" x="-17vw" y="26vw" />
           <Skill name="Hive" x="20vw" y="17vw" />
-          <Skill name="Spark" x="28vw" y="21vw" />
+          <Skill name="Spark" x="10vw" y="22vw" />
+
+
     </div></>
   );
 };
