@@ -59,8 +59,8 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium">
-                Hi👋 I&apos;m <strong>Yiyao Zhang</strong>, studying Mathematics and 
-                Computer Science at <strong>The Ohio State University</strong>, set to graduate December 2023. My 
+                Hi👋 I&apos;m <strong>Yiyao Zhang</strong>, a recent graduate with a background in Mathematics and 
+                Computer Science from <strong>The Ohio State University</strong>. My 
                 studies focus on applied mathematics, data science, and AI technologies.
               </p>
               <p className="my-4 font-medium">
