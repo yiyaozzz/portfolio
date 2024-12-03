@@ -50,14 +50,14 @@ export default function Home() {
               />
   {*/}
               <p className="mt-7 my-4 text-base font-medium md:text-sm sm:!text-xs">
-              Grounded in mathematics and computer science, I leverage my passion for advanced tech to unravel complex problems, creating solutions that positively impact people's lives.
+              Grounded in mathematics and computer science, I specialize in software engineering, data analysis, and project management. Leveraging Agile methodologies, I optimize workflows and deliver innovative, user-focused solutions that create measurable impact.
               </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link
                   // whileHover={{
                   //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
                   // }}
-                  href="/documents/YiyaoZhang.pdf"
+                  href="https://www.linkedin.com/in/yiyaozzhang/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`mt-5 flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
@@ -66,7 +66,7 @@ export default function Home() {
             md:p-2 md:px-4 md:text-base
              `}
                 >
-                  Resume <LinkArrow className="ml-1 !w-6 md:!w-4" />
+                  LinkedIn <LinkArrow className="ml-1 !w-6 md:!w-4" />
                 </Link>
 
                 <Link
@@ -82,8 +82,6 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-
-        <HireMe />
 
       </article>
     </>

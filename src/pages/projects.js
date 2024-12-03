@@ -5,12 +5,11 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import proj2 from "../../public/images/projects/audioWaveform.jpg";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
+import proj1 from "../../public/images/projects/microvervice_project.png";
+import proj2 from "../../public/images/projects/TE_YOLO.png";
+import proj3 from "../../public/images/projects/audioWaveform.jpg";
 import proj4 from "../../public/images/projects/personalWebProj.png";
-import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
-import proj6 from "../../public/images/projects/devdreaming.jpg";
+
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -177,21 +176,31 @@ export default function Projects() {
             className="mb-12 !text-6xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            
+          <div className="col-span-12">
+              <FeaturedProject
+                type="Computer Vision | YOLO | OpenCV"
+                title="ML Automation for Lot History Record Digitization"
+                summary="An intelligent digitization system developed using advanced AI/ML frameworks like OpenCV and YOLO, designed to automate the recognition of handwritten data on Lot History Record (LHR) sheets. Deployed on AWS Cloud, it features a user-friendly interface for seamless data conversion into the SAP system, achieving 98% detection accuracy, reducing manual processing time from 8 hours to 2 minutes, and integrating effortlessly into existing SAP workflows."
+                img={proj1}
+                link="https://github.com/yiyaozzz/TE-AI-Cup"
+                github="https://github.com/yiyaozzz/TE-AI-Cup"
+              />
+            </div>    
+
             <div className="col-span-12">
               <FeaturedProject
-                type="Python"
-                title="EchoGraph: From Soundbite to Sight"
-                summary="Developed a utility to handle audio files and associated subtitles (SRT). Its primary function is to segment the audio according to the SRT cues and generate visual waveform displays for each section, complete with text annotations."
+                type="Microservices Architecture | RESTful APIs | Spring Boot"
+                title="Real-time Order Management"
+                summary="A microservices architecture using Spring Boot and Spring Cloud to enable reliable inter-service communication through synchronous and asynchronous messaging with Kafka. Developed RESTful APIs for efficient and standardized service interactions, integrated an API Gateway to ensure secure communication, and utilized the Grafana Stack (Prometheus, Loki, Tempo) for comprehensive system monitoring, observability, and performance optimization."
                 img={proj2}
-                link="https://github.com/yiyaozzz/audioWaveformExplorer"
-                github="https://github.com/yiyaozzz/audioWaveformExplorer"
+                link=""
+                github=""
               />
             </div>
 
             <div className="col-span-12">
               <FeaturedProject
-                type="JavaScript, TypeScript"
+                type="Next.js | JavaScript| TypeScript"
                 title="Personal Website"
                 summary="A bespoke professional portfolio, crafted with Next JS, utilizing the dynamic capabilities of Framer-motion and the styled-components library. It features seamless page transitions, engaging background animations, and a distinctive design, all optimized for a responsive mobile experience."
                 img={proj4}
@@ -199,6 +208,18 @@ export default function Projects() {
                 github="https://github.com/yiyaozzz/portfolio"
               />
             </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Python"
+                title="EchoGraph: From Soundbite to Sight"
+                summary="Developed a utility to handle audio files and associated subtitles (SRT). Its primary function is to segment the audio according to the SRT cues and generate visual waveform displays for each section, complete with text annotations."
+                img={proj3}
+                link="https://github.com/yiyaozzz/audioWaveformExplorer"
+                github="https://github.com/yiyaozzz/audioWaveformExplorer"
+              />
+            </div>
+
             {/*}
 
             <div className="col-span-6 sm:col-span-12">

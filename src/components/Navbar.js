@@ -110,8 +110,8 @@ const Navbar = () => {
         >
           <TwitterIcon />
         </motion.a>
-        */}
-
+        
+        
         <motion.a
                   href="https://www.dropbox.com/scl/fi/kj6wknlskd2vce0efy50t/YiyaoZhang.pdf?rlkey=js931g7lo3glyh2ic2dhgxhhz&dl=0"
                   className="mr-80 cursor-pointer w-max origin-center absolute 
@@ -125,7 +125,7 @@ const Navbar = () => {
                 >
                   Resume
         </motion.a>
-
+        */}
         <motion.a
           target={"_blank"}
           className="w-7 mr-4"
@@ -139,7 +139,7 @@ const Navbar = () => {
         <motion.a
           target={"_blank"}
           className="w-7 mx-4"
-          href="https://www.linkedin.com/in/yiyao-zhang2023/"
+          href="https://www.linkedin.com/in/yiyaozzhang"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 2 }}
           aria-label="Checkout my linkedin profile"

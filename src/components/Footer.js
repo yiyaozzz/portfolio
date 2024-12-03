@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="flex items-center lg:py-2">
           <span className="text-primary text-2xl px-1 dark:text-primaryDark">&#9825;	</span>
           <Link
-            href="https://www.linkedin.com/in/yiyao-zhang2023/"
+            href="https://www.linkedin.com/in/yiyaozzhang"
             target="_blank"
             className="underline underline-offset-2"
           >

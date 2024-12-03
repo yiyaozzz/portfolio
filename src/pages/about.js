@@ -59,19 +59,22 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium">
-                Hi👋 I&apos;m <strong>Yiyao Zhang</strong>, a recent graduate with a background in Mathematics and 
-                Computer Science from <strong>The Ohio State University</strong>. My 
-                studies focus on applied mathematics, data science, and AI technologies.
+                Hi👋 I&apos;m <strong>Yiyao Zhang</strong>, a technology professional with expertise in software engineering 
+                and project management. Holding a B.S. in Mathematics and Computer Science
+                from <strong>The Ohio State University</strong>, I’ve built a solid foundation in problem-solving,
+                data analysis, and team leadership.
               </p>
               <p className="my-4 font-medium">
-              I have been fortunate to work at <strong>Oracle Corporation</strong> as a Configuration Analyst Intern and at <strong>Alibaba Cloud</strong> as
-               an Operation and Maintenance Assistant Engineer. Beyond these professional roles, I've actively participated in <strong>interdisciplinary 
-               research</strong> at OSU, contributing to the efforts of both the <strong>NeuroTechnology Team</strong> and the <strong>Underwater Robotics Team</strong>. 
-               Additionally, Vice Presidency at the <strong>Cantonese Club</strong> has cultivated my leadership skills, enriching my personal and professional development.
+                At a  <strong>SaaS startup</strong> specializing in AI-powered cardiovascular monitoring, I led the development 
+                of a wearable device integrated with a cloud-based platform, managing end-to-end product lifecycles using Agile 
+                methodologies. At <strong>Oracle</strong>, I streamlined cloud workflows by implementing data consolidation and 
+                fostering cross-functional alignment to enhance operational efficiency. At <strong>Alibaba Cloud</strong>, 
+                I utilized data analysis to optimize emergency response workflows for cloud services, achieving a 15% reduction 
+                in restoration times.
               </p>
               <p className="font-medium">
-              Across these diverse experiences, I've learned the power of collaboration and the importance of diverse perspectives. 
-              Feel free to reach out for a chat — I'm always open to discussing new ideas and sharing insights 😄
+                Across these diverse experiences, I've learned the power of collaboration and the importance of diverse perspectives. 
+                Feel free to reach out for a chat — I'm always open to discussing new ideas and sharing insights 😄
               </p>
             </div>
             <div className="relative w-full max-w-lg rounded-2xl border-2 border-solid border-dark 
@@ -95,8 +98,8 @@ export default function About() {
 
           <Skills />
           <Experience />
-          <Education />
           <Extracurricular />
+          <Education />
         </Layout>
       </main>
     </>

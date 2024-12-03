@@ -49,10 +49,10 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Bachelor of Science in Mathematics and Minor in Computer Science"
-            time="AU 2021- AU 2023"
+            type="B.S. in Mathematics and Computer Science"
+            time="Aug. 2021- Dec. 2023"
             place="The Ohio State University"
-            info="Relevant courses: Databases, Probability for Data Analytics, Mathematical Statistics, Data Structures and Algorithms, Linear Algebra, Differential Equations, Software Development and Design, Computer Architecture, Digital Logic"
+            info="Relevant courses: Software Development and Design, Computer Architecture, Relational Databases, Data Structures and Algorithms, Machine Learning, Probability for Data Analytics, Mathematical Statistics, Linear Algebra, Differential Equations, Digital Logic, Abstract Algebra, Real Analysis"
           />
 
         </ul>

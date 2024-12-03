@@ -165,12 +165,6 @@ export default function Articles() {
 
           <ul className="flex flex-col items-center relative">
             <Article
-              title="Vector Databases: A Guide to Embeddings and Searches"
-              img={blog1}
-              date="October 27, 2023"
-              link="https://yiyaozhang.notion.site/Vector-Databases-A-Guide-to-Embeddings-and-Searches-61c7db854cf04869b49b6adeb9458eb1?pvs=4"
-            />
-            <Article
               title="Glossary of Fundamental Concepts in AI"
               img={blog3}
               date="April 12, 2022"

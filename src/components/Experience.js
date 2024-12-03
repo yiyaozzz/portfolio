@@ -49,17 +49,11 @@ const Experience = () => {
 
   const ref = useRef(null);
 
-  const oracleWorkProp = `Developed a SQL-based data integration system by synthesizing information from four distinct systems onto a Jira dashboard, enhancing data interpretability and supporting strategic decision-making 
-Engineered a Python automation tool to process and analyze complex datasets, boosting efficiency by 25% and reducing manual error rate by 60% 
-Contributed to the data integration for the Oracle CPQ database, achieving a 30% improvement in repository consistency and bolstering data integrity across over 10,000 companies
-Collaborated with cross-functional engineering and business teams to optimize data exchange processes, resulting in a 15% increase in workflow efficiency 
-Streamlined data consolidation efforts across multiple repositories via Confluence, resulting in a 40% improvement in data integration and consistency`;
+  const startupWorkProp = `Led the development of a cardiovascular wearable device integrated with an AI-driven SaaS platform, managing end-to-end product lifecycles and delivering projects 15% ahead of schedule.`;
 
-  const aliWorkProp = `Developed a JavaScript-based fault management web platform to quickly restore operations during critical cloud service outages, enhancing user stability and boosting service reliability by 30%
-Enhanced SQL-based data management, increasing data retrieval speeds by 20% and upholding cloud service stability to bolster client trust
-Conducted data-driven analysis on fault data which optimized emergency processes for Alibaba Cloud
-Analyzed fault data to improve emergency response efficiency by 15% and created a Python-powered visualization dashboard, which was integrated into the data reporting system, enhancing the clarity of operational insights by 25%
-Led cross-functional teams to align projects with business goal, facilitating fault management retrospectives, continuous improvement cycles, and delivering a 10% increase in project satisfaction rates`;
+  const oracleWorkProp = `Streamlined workflows for Oracle's CPQ cloud system by consolidating data, creating query-based dashboards, and aligning cross-functional teams to enhance decision-making and operational efficiency.`;
+
+  const aliWorkProp = `Designed data visualization dashboards using Python and SQL to monitor system performance and optimize emergency response workflows, reducing restoration times by 15%.`;
 
 
   const { scrollYProgress } = useScroll({
@@ -81,9 +75,16 @@ Led cross-functional teams to align projects with business goal, facilitating fa
             style={{ scaleY: scrollYProgress }}
           />
           <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          <Details
+              position="Technical Product Manager"
+              company="Healthcare Startup"
+              location="United States"
+              time="Feb 2024 - Nov 2024"
+              work={startupWorkProp}
+            />
             <Details
               position="Configuration Analyst Intern"
-              company="Oracle Corporation"
+              company="Oracle"
               location="United States"
               companyLink="https://www.oracle.com/"
               time="May 2023 - September 2023"
@@ -91,23 +92,13 @@ Led cross-functional teams to align projects with business goal, facilitating fa
             />
 
             <Details
-              position="Operation and Maintenance Assistant Engineering"
+              position="Operations Analyst"
               company="Alibaba Cloud"
               location="China"
               companyLink="https://us.alibabacloud.com/"
-              time="January 2021 - July 2021"
+              time="July 2020 - July 2021"
               work={aliWorkProp}
             />
-            {/*}
-            <Details
-              position="Bio-Hackthon"
-              company="Patient Safety Technology Challenge"
-              location="United States"
-              companyLink="https://www.patientsafetytech.com/"
-              time="2023"
-              work={aliWorkProp}
-            />
-  {*/}
           </ul>
         </div>
         </div>
