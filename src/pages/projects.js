@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/microvervice_project.png";
-import proj2 from "../../public/images/projects/TE_YOLO.png";
+import proj2 from "../../public/images/projects/microvervice_project.png";
+import proj1 from "../../public/images/projects/TE_YOLO.png";
 import proj3 from "../../public/images/projects/audioWaveform.jpg";
 import proj4 from "../../public/images/projects/personalWebProj.png";
 
